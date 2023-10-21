@@ -1,0 +1,310 @@
+* ,
+*::before ,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+ul ,
+li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+.container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+}
+.container::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+.text-primary{
+    color:dodgerblue;
+}
+.text-white{
+    color:white;
+}
+/* header */
+.header {
+    width: 100%;
+    background-color: #a4e8f3;
+}
+.header-logo{
+    padding:15px 0;
+    float:left;
+}
+.header-logo a { 
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+/* menu */
+.menu {
+    float:right;
+}
+.menu li {
+    float:left;
+}
+.menu li a {
+    color:white;
+    font-size:18px;
+    padding:20px 15px;
+    display:block;
+    transition:0.3s;
+}
+.menu li a:hover , 
+.this-page-selected {
+    color:dodgerblue !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* main */
+.main {
+    width: 100%;
+}
+/* hero */
+.hero {
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8))  , url('../images/hero.jpg') no-repeat center 20%;
+    background-size:cover;
+}
+.header-content{
+    text-align:center;
+    padding:250px 0;
+}
+.header-content h1 {
+    font-size:50px;
+    text-transform:uppercase;
+}
+.header-content p {
+    margin:30px 0;
+}
+.header-content a ,
+.header-content-link {
+    background-color: #333;
+    padding:18px 25px;
+    display:inline-block;
+    border-radius:5px;
+}
+.header-content-link:hover{ 
+    color:dodgerblue;
+}
+/* history */
+.history {
+    width: 100%;
+    float:left;
+}
+.history .history-child{
+    width: 50%;
+    float:left;
+}
+.history-image{ 
+    height: 400px;
+    background: url('../images/history.jpg') no-repeat center top;
+    background-size:cover;
+}
+.history-content {
+    background-color: #333;
+    color:white;
+    height:400px;
+    padding:100px;
+    text-align:center;
+}
+.history-content h2 {
+    font-size:35px;
+}
+.history-content p {
+    font-size:18px;
+    line-height:30px;
+    margin:30px 0;
+}
+.history-content a {
+    background-color: #f5f5f5;
+    padding:10px 15px;
+    display:inline-block;
+    border-radius:5px;
+    color:#333;
+}
+.history-content a:hover{ 
+    color:dodgerblue;
+}   
+/* platforms */
+.platforms{
+    width: 100%;
+    float:left;
+}
+.platforms .platform-box {
+    width: 33.33%;
+    float:left;
+    padding:60px 40px;
+    text-align:center;  
+    background-color: #f5f5f5;
+    color:#333;
+}
+.platforms .platforms-box i {
+    font-size:40px;
+}
+.platforms .platform-box h2 {
+    margin:20px 0 ;
+}
+.platforms .platform-box:nth-child(2) {
+    background-color: dodgerblue;
+    color:white;
+} 
+/* contact us page */
+.contact-us {
+    width: 100%;
+    float:left;
+
+}
+.contact-us-section {
+    background-color: white;
+    padding:40px 0;
+}
+.contact-us h1 {
+    font-size:50px;
+    margin-bottom:20px ;
+}
+/* contact us form */
+.contact-us-form {
+    width: 100%;
+    margin-top:20px;
+}
+.form-group:not(:last-child) {
+    margin-bottom:20px;
+} 
+.form-group label {
+    display:block;
+    margin-bottom:7px;
+}
+.form-group input ,
+.form-group textarea {
+    width: 100%;
+    height: 35px;
+    padding:0 10px;
+    color:#333;
+    caret-color:dodgerblue;
+}
+.form-group input::placeholder {
+    color:dodgerblue;
+}
+.form-group textarea {
+    height: 170px;
+    resize:none;
+    padding:10px;
+}
+.form-group .submit-input {
+    width: auto;
+    background-color: #333;
+    color: white;
+    border:none;
+    padding:9px 20px;
+    height: auto;
+    font-size:16px;
+    cursor: pointer;
+}
+.form-group .submit-input:hover {
+    color:dodgerblue;
+}
+.form-group input:focus ,
+.form-group textarea:focus {
+    outline:1px solid dodgerblue;
+}
+/* find us */
+.find-us {
+    width: 100%;
+    background-color: #333;
+    min-height: 150px;
+    float:left;
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);
+}
+.find-us .platform-box {
+    background-color: #333 !important;
+    color:white;
+}
+/* about us */
+.about-us-content-wrapper {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.about-us-content {
+    padding:40px 0;
+    width: 100%;
+    float:left;
+}
+.about-us-content-left {
+    width: 50%;
+    float:left;
+}
+.about-us-content-left h1 {
+    margin-bottom:30px;
+}
+.about-us-content-left p {
+    margin-bottom:20px;
+    font-weight:bold;
+    font-size:18px;
+    line-height:28px ;
+}
+.about-us-content-left p:last-child {
+    margin-bottom:0;
+}
+/* about us right */
+.about-us-content-right {
+    width: 50%;
+    float:left;
+}
+.about-us-content-right img {
+    width: 70%;
+    display:block;
+    margin:0 auto;
+    border-radius:50%;
+}
+/* about us gamers says */
+.gamers-says {
+    background: url('../images/our-gamers.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 300px;
+    padding:80px 0 ;
+}
+.gamesr-says-inner h2 {
+    color:white;
+    text-align:center;
+    font-size:40px;
+}
+.gamers-box {
+    background-color:rgba(30, 143, 255, 0.8) ;
+    margin-top:50px;
+    width: 100%;
+    float:left;
+    padding:15px;
+}
+.gamers-box img {
+    width: 100px;
+    border-radius:50%;
+    float:left;
+}
+.gamers-box p {
+    float:left;
+    width: calc(100% - 100px);
+    padding-left:30px;
+    line-height:24px;
+    color:white;
+    padding-top:20px;
+}
+/* footer */
+.footer {
+    background-color: #333;
+    color:white;
+    float:left;
+    width: 100%;
+    text-align:center;
+    padding:70px 0; 
+    line-height:30px;
+}
